@@ -9,16 +9,24 @@ function Hero() {
           alt="logo"
           width={101}
           height={96}
-          className="object-contain"
+          className="object-contain rounded-full"
         />
-        <h1 className="sm:text-6xl text-5xl text-white lg:max-w-lg font-bold leading-[120%]">
-          Explore The <span className="red-gradient">Diverse Realms</span> of
-          Anime Magic
-        </h1>
+          <h1 className="sm:text-6xl text-5xl text-white lg:max-w-lg font-bold leading-[120%]">
+              Well, I don&apos;t know much about <span className="red-gradient">Anime</span> but, I dedicate this page to
+              you, <span
+              className="bg-gradient-to-r from-purple-600 to-red-400 bg-clip-text text-transparent py-2">Anku</span>
+              <span className="red-gradient pt-4 whitespace-nowrap block text-[30px]">by Rage...</span>
+          </h1>
+
       </div>
-      <div className="lg:flex-1 relative w-full h-[50vh] justify-center">
-        <Image src="/anime.png" alt="anime" fill className="object-contain" />
-      </div>
+        <div className="lg:flex-1 relative w-full h-[50vh] flex flex-col items-center">
+            <div className="relative w-full h-full">
+                <Image src="/anime.png" alt="anime" fill className="object-contain"/>
+            </div>
+            <div className="text-center mt-2">
+                <span className={"font-bold text-amber-50"}>Mad Scientist Hououin Kyouma (your fav)</span>
+            </div>
+        </div>
     </header>
   );
 }
